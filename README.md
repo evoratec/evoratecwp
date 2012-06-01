@@ -1,4 +1,4 @@
-# Foundation, for WordPress, modified by Evoratec
+# Foundation, for WordPress, by Evoratec
 
 Foundation, for WordPress, is a blank starter theme with the exceptional capabilities of [ZURB's Foundation Framework](http://foundation.zurb.com/) and [HTML5 Boilerplate](http://html5boilerplate.com/).
 
@@ -21,12 +21,14 @@ As a neat-freak designer, it's sometimes intimidating and frustrating looking at
 + Follow [Drew on Google +](https://plus.google.com/114153589610660530694?rel=author)
 + View [Drew's Website](http://www.drewsymo.com)
 
-** Evoratec **
+**Evoratec**
 + Evora sistemas de información, a spanish company design and web development based on Almería , Spain
 + View [Evoratec's Website](http://www.evoratec.com)
+
+
 ## License
 
-### Foundation, for WordPress
+### Foundation, for WordPress by evoratec.
 
 Foundation, for WordPress, is listed under Public Domain.
 
