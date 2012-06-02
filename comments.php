@@ -1,4 +1,6 @@
-<!-- Begin Comments -->
+<!-- Begin Comments
+    Comentamos para hacer una prueba del git
+-->
 <div>
 	<?php /* Run some checks for bots and password protected posts */ ?>
 	<?php
