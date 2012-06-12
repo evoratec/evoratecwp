@@ -1,3 +1,6 @@
+<div class="row">
+
+
 <div class="eight columns">
 
 	<!-- Start the Loop -->
@@ -28,4 +31,5 @@
 	<!--End the loop -->
 	<?php endif; ?>
 	
+</div>
 </div>

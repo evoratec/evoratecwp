@@ -55,8 +55,4 @@
 		evoratec_before_main();
 		?>
 		<!-- Main Row -->
-		<div id="row-content">
-		<div class="row content">
-		
-		
-				
+		<div id="row-content">		

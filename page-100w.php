@@ -1,10 +1,10 @@
 <?php
 /*
- * Template Name: Page 100W
- */
+* Template Name: Page 100W
+*/
 ?>
 <?php get_header(); ?>
-
+<div class="row">
 <div class="page tweelve columns">
 
 	<!-- Start the Loop -->
@@ -35,5 +35,5 @@
 <?php endif; ?>
 
 </div>
-
+</div>
 <?php get_footer(); ?>

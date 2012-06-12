@@ -2,7 +2,6 @@
 
 // directorio del tema. Ruta completa. Nos sirve para incluir las diferentes librerias
 define(TEMPLATE_DIR,get_bloginfo('template_directory'));
-
 define(THEMEEVORA, dirname(__FILE__));
 require_once( THEMEEVORA .'/less/lessc.inc.php');
 require_once (THEMEEVORA . '/less/evowpfless.php');
@@ -15,7 +14,7 @@ add_theme_support('post-thumbnails');
 // Habilita los shortcodes en los widgets de texto
 add_filter('widget_text', 'do_shortcode');
 
-$dirtemplate =get_bloginfo('template_directory');
+$dirtemplate = get_bloginfo('template_directory');
 
 
 
@@ -300,6 +299,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		array(
 		  // - Header Navigation
 		  'menu_principal' => 'Header Navigation',
+          'menu_mobil' => 'Navigation Mobil',
 		)
 	);
 }
@@ -313,15 +313,6 @@ if (function_exists('register_sidebar')) {
 	register_sidebar(array(
 		'name'=> 'Right Sidebar',
 		'id' => 'right_sidebar',
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h4>',
-		'after_title' => '</h4>',
-	));
-	
-	register_sidebar(array(
-		'name'=> 'Sidebar Menú',
-		'id' => 'sb_menu_checkout',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h4>',
@@ -749,6 +740,13 @@ function evora_add_footer(){
 
         echo '</div>';
 }
-add_action('evora_footer','evora_add_footer')
+add_action('evora_footer','evora_add_footer');
 
+function evowpf_limit_words($string, $word_limit)
+{
+    $words = explode(' ', $string, ($word_limit + 1));
+    if(count($words) > $word_limit)
+        array_pop($words);
+    return implode(' ', $words);
+}
 ?>

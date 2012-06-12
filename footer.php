@@ -1,6 +1,5 @@
-	</div><!-- Main Row -->
-		</div><!-- Row Contenido -->
-	
+	</div><!-- Row Content-->
+
 	<!-- Footer -->
 	
 	<div id ="row-footer">
@@ -10,13 +9,13 @@
         <?php
         evora_footer();
         ?>
-		<div class="twelve columns"><hr>
+		<hr>
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Sidebar')) : ?>
 					<h4>Hey! You!</h4>
 					<p>You should like, so test out this dynamic footer sidebar. Check it out in Appearance > Widgets!</p>
 					<?php endif; ?>
 
-		</div>		
+		
 		
 	
 	</footer>
