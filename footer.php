@@ -1,24 +1,22 @@
-	</div><!-- Row Content-->
+	</div><!-- Main Row-->
 
 	<!-- Footer -->
 	
 	<div id ="row-footer">
-	<div class="row footer">
+	    <div class="row footer">
 	
-	<footer class="row">
-        <?php
-        evora_footer();
-        ?>
-		<hr>
+    	<footer class="row">
+            <?php evora_footer(); ?>
+		    <hr>
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Sidebar')) : ?>
 					<h4>Hey! You!</h4>
 					<p>You should like, so test out this dynamic footer sidebar. Check it out in Appearance > Widgets!</p>
-					<?php endif; ?>
+			<?php endif; ?>
 
 		
 		
 	
-	</footer>
+	    </footer>
 	
 	</div><!-- Footer -->
 	</div><!-- Footer -->

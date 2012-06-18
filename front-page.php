@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
  get_header(); ?>
-
+<div class="row">
 <div class="twelve columns">
 
 <!-- Skip Nav -->
@@ -38,5 +38,5 @@
 <?php endif; ?>
 
 </div>
-
+</div>
 <?php get_footer(); ?>
