@@ -262,11 +262,15 @@ function menu_principal(){
 	<div id="menu-movil">
 		<p><a class="nav-js active button " href="">Menu</a></p>
 	</div>
+
 	<div id="menu-header">					
     <?php  wp_nav_menu( array( 'theme_location' => 'menu_principal',
                                'menu'=>'menu_es',
                                 'menu_class' => 'responsive-menu',
-                                'walker'=> new description_walker()) );
+                                'walker'=> new menu_walker()) );
+
+
+
 	?>
 	</div>
 	<?php
@@ -643,7 +647,7 @@ function evoratec_register_sidebars() {
 }
 add_action( 'init', 'evoratec_register_sidebars' );
 
-class description_walker extends Walker_Nav_Menu
+class menu_walker extends Walker_Nav_Menu
 {
     function start_el(&$output, $item, $depth, $args)
     {

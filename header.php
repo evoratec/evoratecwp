@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if IEMobile 7 ]> <html <?php language_attributes(); ?>class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html <?php language_attributes(); ?> class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html <?php language_attributes(); ?> class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html <?php language_attributes(); ?> class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
+
 <head>
 	<meta charset="utf-8" />
-	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 	
@@ -28,6 +29,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/reveal.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/app.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/mobile.css">
+
 	<link rel="stylesheet" href="<?php echo get_bloginfo('stylesheet_url'); ?>">
 	
 	<!--[if lt IE 9]>
